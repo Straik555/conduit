@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "es5",
+    "outDir": "./dist/",
+    "noImplicitAny": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,14 +16,57 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "~": [
+        "src/"
+      ],
+      "~/*": [
+        "src/*"
+      ],
+      "~store": [
+        "src/store"
+      ],
+      "~navigation/*": [
+        "src/navigation/*"
+      ],
+      "~components": [
+        "src/components"
+      ],
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~pages": [
+        "src/pages"
+      ],
+      "~utils": [
+        "src/utils"
+      ],
+      "~utils/*": [
+        "src/utils/*"
+      ],
+      "~constants": [
+        "src/constants"
+      ],
+      "~api": [
+        "src/api"
+      ],
+      "~api*": [
+        "src/api/*"
+      ],
+      "~assets": [
+        "src/assets"
+      ]
+    }
   },
   "include": [
-    "src"
+    "src",
+    "./src/@types/css.d.ts",
+    "./src/@types/svg.d.ts"
   ]
 }

@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 25px auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes ldio-n9iy4pom8mc {
+    0% {
+        top: 72px;
+        left: 72px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -1.5px;
+        left: -1.5px;
+        width: 147px;
+        height: 147px;
+        opacity: 0;
+    }
+}
+
+.ldio-n9iy4pom8mc div {
+    position: absolute;
+    border-width: 3px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ldio-n9iy4pom8mc 1.5384615384615383s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ldio-n9iy4pom8mc div:nth-child(1) {
+    border-color: #66dc91;
+    animation-delay: 0s;
+}
+
+.ldio-n9iy4pom8mc div:nth-child(2) {
+    border-color: #53b9ab;
+    animation-delay: -0.7692307692307692s;
+}
+
+.loadingio-spinner-ripple-psursag005 {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+
+.ldio-n9iy4pom8mc {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+
+.ldio-n9iy4pom8mc div {
+    box-sizing: content-box;
 }
